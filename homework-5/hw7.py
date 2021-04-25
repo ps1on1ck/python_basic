@@ -21,8 +21,11 @@ try:
         firm_list = {}
         average_profit_list = []
         for line in lines:
+            if not line:
+                break
             words = [words for words in line.split()]
-            total_count = sum([int(number) for number in words[2:]])
+            earn, spend = words[2:]
+            total_count = int(earn) - int(spend)
             firm_list[words[0]] = total_count
             if total_count >= 0:
                 average_profit_list.append(total_count)

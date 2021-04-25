@@ -1,12 +1,12 @@
 [
   {
-    "Brooms": 3000000,
-    "Tandoor": 3125000,
-    "Honey-cake": 5705000,
-    "Matrioshka": 5281000,
-    "Сказка": 15500000
+    "Brooms": 2000000,
+    "Tandoor": -635000,
+    "Honey-cake": 4795000,
+    "Matrioshka": 4259000,
+    "Сказка": 5500000
   },
   {
-    "average_profit": 6522200.0
+    "average_profit": 4138500.0
   }
 ]
