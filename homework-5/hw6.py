@@ -15,6 +15,8 @@ try:
     with open('text_6.txt', encoding="utf-8") as file:
         lines = [line for line in file.read().replace('(пр)', '').replace('(л)', '').replace('(лаб)', '').split('\n')]
         for line in lines:
+            if not line:
+                break
             new_list = line.replace('-', '').split(':')
             numbers = [int(number) for number in new_list[1].split()]
             subjects[new_list[0]] = sum(numbers)
